@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('tabla');
-});
+});*/
 
-Route::get('/lista', 'UsersController@lista') -> name('lista');
+Route::get('/', 'UsersController@lista') -> name('lista');
 Route::post('/deletelista', 'UsersController@delete') -> name('borrarCampo');
